@@ -112,6 +112,10 @@ nav .nav-menu ul li span{
     text-align: center;
     flex: 1;
 }
+.food-story-wrapper ul li:last-child,
+.cuisine ul li:last-child{
+    margin-right: 0;
+}
 .food-story-wrapper .linear-story-bg{
     background-image: linear-gradient(to bottom, #eeaf3b 0%, #650081 100%);
     border-radius: 50%;
@@ -169,7 +173,11 @@ nav .nav-menu ul li span{
 .voucher .voucher-block{
     display: flex;
     justify-content: space-between;
-    background-color: #ffda50;
+    background-image: url(../../assets/images/border-voucher.png);
+    background-position: top left;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
     padding: 10px 30px;
     align-items: center;
 }
@@ -241,15 +249,15 @@ nav .nav-menu ul li span{
 .explore-catering .explore-catering-row:last-child{
     border-bottom: 0;
 }
-.explore-catering .subtitle{
+.subtitle{
     display: flex;
     justify-content: space-between;
 }
-.explore-catering .subtitle h3{
+.subtitle h3{
     font-size: 20px;
     font-weight: bold;
 }
-.explore-catering .subtitle a{
+.subtitle a{
     color: #650081;
     font-weight: bold;
 }
@@ -263,6 +271,9 @@ nav .nav-menu ul li span{
     display: flex;
     flex: 1;
     margin-right: 30px;
+}
+.explore-catering ul li:last-child{
+    margin-right: 0;
 }
 .explore-catering ul li p{
     flex: 1;
@@ -284,12 +295,14 @@ nav .nav-menu ul li span{
     display: flex;
     align-items: center;
 }
-.explore-catering .catering-rating-block p{
+.explore-catering .catering-rating-block p,
+.top-rated .top-rating-block p{
     margin-bottom: 0;
     align-items: center;
     display: flex;
 }
 .explore-catering .catering-rating-block p img,
+.top-rated .top-rating-block p img,
 .explore-catering .catering-rating-block .catering-time-cart img{
     width: 20px;
     margin-right: 10px;
@@ -313,6 +326,9 @@ nav .nav-menu ul li span{
 }
 
 /* -----------best-offer---------- */
+.best-offer .explore-catering-row .subtitle{
+    margin-bottom: 25px;
+}
 .best-offer .explore-catering .catering-details .catering-type{
     border-bottom: 0;
     padding-bottom: 5px;
@@ -326,6 +342,117 @@ nav .nav-menu ul li span{
 .best-offer .catering-rating-block:last-child{
     border-bottom: 0;
 }
-.best-offer .rating-preorder img{
+.best-offer .rating-preorder img,
+.top-rated .top-rating-block img{
     width: 35px;
+}
+
+/* -------------top-rated-------------- */
+.top-rated .top-rated-wrapper,
+.popular .popular-wrapper{
+    padding: 40px 20px 20px 20px;
+}
+.top-rated .subtitle,
+.popular .subtitle{
+    margin-bottom: 30px;
+}
+.top-rated ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+}
+.top-rated ul li{
+    flex: 1 0 32%;
+    max-width: 32%;
+    margin-right: 20px;
+    background-color: #fff;
+}
+.top-rated ul li:last-child{
+    margin-right: 0;
+}
+.top-rated .img-wrapper{
+    position: relative;
+    overflow: hidden;
+    max-height: 240px;
+}
+.top-rated .img-wrapper img{
+    object-fit: cover;
+    min-height: 240px;
+}
+.top-rated .img-wrapper .discount-offer{
+    width: auto;
+    background: #FFCB05;
+    padding: 10px 6px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-rated .img-wrapper .discount-offer:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    right: -12px;
+    top: 0;
+    width: 0;
+    height: 24px;
+    border-right: 8px solid transparent;
+    border-top: 11px solid #FFCB05;
+    border-left: 8px solid #FFCB05;
+    border-bottom: 11px solid #FFCB05;
+}
+.top-rated .rated-content{
+    padding: 20px 10px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+.top-rated .top-rating-block{
+    padding: 5px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ---------discount voucher------- */
+.discount-vouher{
+    display: flex;
+    padding: 40px 0 30px 0;
+    flex-wrap: wrap;
+}
+.discount-vouher p{
+    flex: 1 0 32%;
+    max-width: 32%;
+    margin-right: 20px;
+}
+.discount-vouher p:last-child{
+    margin-right: 0;
+}
+
+/* ----------popular------------ */
+.popular ul{
+    display: flex;
+    align-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+.popular ul li{
+    flex: 1 0 24%;
+    max-width: 24%;
+    margin-right: 14px;
+}
+.popular ul li:last-child{
+    margin-right: 0;
+}
+.popular ul li span{
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
