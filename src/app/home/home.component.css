@@ -136,6 +136,7 @@ nav .nav-menu ul li span{
 .cuisine ul li span{
     font-size: 16px;
     color: #050505;
+    margin-top: 20px;
 }
 .food-story-wrapper p img,
 .cuisine p img{
@@ -240,7 +241,7 @@ nav .nav-menu ul li span{
 }
 /* -----------explore-catering---------- */
 .explore-catering .explore-catering-wrapper{
-    padding: 0 20px 20px 20px;
+    padding: 0 0 0 20px;
 }
 .explore-catering .explore-catering-row{
     border-bottom: 1px solid #eaeaea;
@@ -317,7 +318,7 @@ nav .nav-menu ul li span{
 }
 /* ------------cuisine------------- */
 .cuisine{
-    padding: 30px 20px 10px 20px;
+    padding: 30px 40px 10px 70px;
     border-top: 10px solid #eaeaea;
     border-bottom: 10px solid #eaeaea;
 }
@@ -350,7 +351,7 @@ nav .nav-menu ul li span{
 /* -------------top-rated-------------- */
 .top-rated .top-rated-wrapper,
 .popular .popular-wrapper{
-    padding: 40px 20px 20px 20px;
+    padding: 30px 40px 10px 70px;
 }
 .top-rated .subtitle,
 .popular .subtitle{
@@ -422,7 +423,7 @@ nav .nav-menu ul li span{
 /* ---------discount voucher------- */
 .discount-vouher{
     display: flex;
-    padding: 40px 0 30px 0;
+    padding: 30px 0px 10px 15px;
     flex-wrap: wrap;
 }
 .discount-vouher p{
