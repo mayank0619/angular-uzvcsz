@@ -1,0 +1,331 @@
+/* -----------common classes-------- */
+button{
+    background-color: #650082;
+    border-radius: 24px;
+    min-width: 110px;
+    border-color: #650082;
+    padding: 5px 10px;
+    outline: none;
+}
+.bg-gray{
+    background-color: #f3f3f3;
+}
+.heading{
+    color: #000000;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+.color-purple{
+    color: #650082;
+}
+.color-off-black{
+    color: #404040;
+}
+.color-light-gray{
+    color: #828181;
+}
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-1{
+    flex: 2;
+}
+/* -------nav-wrapper---------- */
+.main-wrapper{
+    margin-bottom: 30px;
+}
+.nav-wrapper{
+    align-items: center;
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1000;
+    transition: transform .3s ease;
+    padding: 0 20px;
+    background-color: #fff;
+}
+nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    background: #fff !important;
+}
+nav .navbar-nav{
+    flex: 1;
+}
+nav .nav-menu{
+    display: flex;
+    flex: 1;
+}
+nav .nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+nav .nav-menu ul li{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+nav .nav-menu ul li span{
+    display: block;
+    margin-left: 10px;
+}
+
+/* ----------wrapper----------- */
+.wrapper{
+    padding-top: 80px;
+}
+.food-story-wrapper ul,
+.cuisine ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-story-wrapper ul li,
+.cuisine ul li{
+    margin-right: 20px;
+    text-align: center;
+    flex: 1;
+}
+.food-story-wrapper .linear-story-bg{
+    background-image: linear-gradient(to bottom, #eeaf3b 0%, #650081 100%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+    z-index: 2;
+    width: 128px;
+    height: 128px;
+}
+.food-story-wrapper p{
+    background-color: #fff;
+    padding: 5px;
+}
+.food-story-wrapper ul li span,
+.cuisine ul li span{
+    font-size: 16px;
+    color: #050505;
+}
+.food-story-wrapper p img,
+.cuisine p img{
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.food-story-wrapper ul li p,
+.cuisine ul li p{
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* --------offers-block----------- */
+.offers-block{
+    padding: 20px 25px;
+}
+.offers-block .offers-block-img img{
+    width: 100%;
+    min-height: 211px;
+    object-fit: cover;
+}
+
+/* -------voucher--------- */
+.voucher{
+    margin: 30px 0;
+}
+.voucher .voucher-block{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffda50;
+    padding: 10px 30px;
+    align-items: center;
+}
+.voucher .voucher-block span{
+    font-weight: bold;
+}
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: 0 0 0 0.2rem rgb(179, 102, 202);
+}
+
+/* ----------explore-home----------- */
+.explore-title-bar{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    position: relative;
+}
+.explore-title-bar:before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #f3f3f3;
+}
+.explore-title-bar img{
+    margin-right: 15px;
+    width: 25px;
+    position: relative;
+}
+.explore-home .explore-home-food{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+.explore-home .explore-home-food-col{
+    flex: 1 0 10%;
+    max-width: 10%;
+    margin-right: 20px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.explore-home .explore-home-food-col img{
+    width: 30px;
+    margin: 0 auto;
+}
+.explore-home .explore-home-food-col span{
+    display: block;
+    margin-top: 10px;
+}
+/* -----------explore-catering---------- */
+.explore-catering .explore-catering-wrapper{
+    padding: 0 20px 20px 20px;
+}
+.explore-catering .explore-catering-row{
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 0 10px 0;
+}
+.explore-catering .explore-catering-row:last-child{
+    border-bottom: 0;
+}
+.explore-catering .subtitle{
+    display: flex;
+    justify-content: space-between;
+}
+.explore-catering .subtitle h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.explore-catering .subtitle a{
+    color: #650081;
+    font-weight: bold;
+}
+.explore-catering ul{
+    padding-left: 0;
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.explore-catering ul li{
+    display: flex;
+    flex: 1;
+    margin-right: 30px;
+}
+.explore-catering ul li p{
+    flex: 1;
+    margin-right: 20px;
+}
+.explore-catering .catering-details{
+    flex: 2;
+}
+.explore-catering .catering-details .catering-type{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+}
+.explore-catering .catering-details .catering-type h5{
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.explore-catering .catering-rating-block{
+    display: flex;
+    align-items: center;
+}
+.explore-catering .catering-rating-block p{
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+}
+.explore-catering .catering-rating-block p img,
+.explore-catering .catering-rating-block .catering-time-cart img{
+    width: 20px;
+    margin-right: 10px;
+}
+.explore-catering .catering-rating-block .subscribed-btn{
+    flex: 2;
+}
+.explore-catering .catering-rating-block .subscribed-btn button{
+    background-color: #ffcb05;
+    color: #fff;
+    border-color: #ffcb05;
+}
+/* ------------cuisine------------- */
+.cuisine{
+    padding: 30px 20px 10px 20px;
+    border-top: 10px solid #eaeaea;
+    border-bottom: 10px solid #eaeaea;
+}
+.cuisine .heading{
+    margin-bottom: 35px;
+}
+
+/* -----------best-offer---------- */
+.best-offer .explore-catering .catering-details .catering-type{
+    border-bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+.best-offer .catering-rating-block{
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.best-offer .catering-rating-block:last-child{
+    border-bottom: 0;
+}
+.best-offer .rating-preorder img{
+    width: 35px;
+}
