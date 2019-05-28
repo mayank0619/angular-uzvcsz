@@ -1,0 +1,233 @@
+/* -common classes---- */
+.color-purple{
+    color: #650082;
+}
+button{
+    background-color: #650082;
+    border-radius: 24px;
+    min-width: 110px;
+    border-color: #650082;
+    padding: 5px 10px;
+    outline: none;
+}
+.color-off-black{
+    color: #404040;
+}
+
+/* -------nav-wrapper---------- */
+.nav-wrapper{
+    align-items: center;
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1000;
+    transition: transform .3s ease;
+    padding: 0 20px;
+    background-color: #fff;
+}
+nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    background: #fff !important;
+}
+nav .navbar-nav{
+    flex: 1;
+}
+nav .nav-menu{
+    display: flex;
+    flex: 1;
+}
+nav .nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+nav .nav-menu ul li{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+nav .nav-menu ul li span{
+    display: block;
+    margin-left: 10px;
+}
+
+/* ----------wrapper----------- */
+.wrapper{
+    padding-top: 80px;
+}
+.food-story-wrapper ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-story-wrapper ul li{
+    margin-right: 20px;
+    text-align: center;
+    flex: 1;
+}
+.food-story-wrapper ul li:last-child{
+    margin-right: 0;
+}
+.food-story-wrapper .linear-story-bg{
+    background-image: linear-gradient(to bottom, #eeaf3b 0%, #650081 100%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+    z-index: 2;
+    width: 128px;
+    height: 128px;
+}
+.food-story-wrapper p{
+    background-color: #fff;
+    padding: 5px;
+}
+.food-story-wrapper ul li span{
+    font-size: 16px;
+    color: #050505;
+    margin-top: 20px;
+}
+.food-story-wrapper p img{
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.food-story-wrapper ul li p{
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* -----------map container--------- */
+.map-container{
+    position: relative;
+}
+.map-container iframe{
+    width: 100%;
+}
+.map-container .fast-food{
+    position: absolute;
+    background-color: #fff;
+    bottom: 25px;
+    left: 60px;
+    width: calc(100% - 120px);
+}
+.map-container .fast-food .fast-food-img{
+    flex: 1 0 16%;
+    max-width: 16%;
+    margin-right: 20px;
+}
+.map-container .fast-food-content-wrapper{
+    flex: 1 0 80%;
+    max-width: 80%;
+    padding: 10px 0px 10px 0px;
+}
+.map-container .fast-food-content{
+    margin-bottom: 10px;
+}
+.map-container .fast-food-content p img{
+    width: 35px;
+    margin-right: 10px;
+}
+.map-container .fast-food-content p span{
+        color: #404040;
+        font-weight: 600;
+}
+.map-container .fast-food-rating{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 4px;
+}
+.map-container .fast-food-rating img{
+    width: 20px;
+    margin-right: 10px;
+}
+.map-container .fast-food-detail button{
+    background-color: #FFCB05;
+    border-color: #FFCB05;
+    color: #fff;
+    border-radius: 4px;
+}
+.map-container .fast-food-detail span{
+    margin-right: 20px;
+}
+.map-container .fast-food-detail span:first-child{
+    position: relative;
+}
+.map-container .fast-food-detail span:first-child::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 100%;
+    display: inline-block;
+    border-right: 1px solid #404040;
+}
+
+/* -----------choose-vehicle---------- */
+.choose-vehicle ul{
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 50px;
+}
+.choose-vehicle ul li{
+    flex: 1 0 14%;
+    max-width: 14%;
+    margin: 0 15px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+}
+.choose-vehicle ul li img{
+    width: 35px;
+    margin-right: 10px;
+}
+.choose-vehicle ul li p{
+    padding: 10px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.choose-vehicle ul li p span{
+    color: #000000;
+    font-size: 14px;
+}
+.choose-vehicle ul li .right-strip{
+    width: 16px;
+    background-color: #FF9000;
+    min-height: 44px;
+    border: 1px solid #D7D7D7;
+    border-radius: 5px;
+}
+.choose-vehicle ul li .right-strip.truck{
+    background-color: #EC008C;
+}
+.choose-vehicle ul li .right-strip.bicycle{
+    background-color: #00A795;
+}
